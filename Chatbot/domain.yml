@@ -1,0 +1,99 @@
+version: "2.0"
+
+intents:
+  - administrador
+  - afirmar
+  - despedir
+  - duda
+  - gracias
+  - negar
+  - saludo
+  - chitchat
+  - chitchat/experiencia
+  - chitchat/felicitación
+  - chitchat/interés
+  - chitchat/mision
+  - chitchat/vision
+  - chitchat/objetivo
+  - chitchat/ubicacion
+  
+
+responses:
+  utter_despedir:
+  - text: "Esperamos haberte ayudado. Saludos."
+  - text: "Estamos a tus órdenes!"
+  - text: "Estamos para servir."
+  - text: "Cualquier duda, no dudes en escribirnos!"
+  - text: "Si tienes más dudas, no dudes en contactarnos."
+  - text: "Estamos para ayudarnos."
+  - text: "Te estaremos esperando!"
+  - text: "Sigamos aprendiendo juntos!"
+
+  utter_duda:
+  - text: "Adelante!"
+  - text: "Te leo..."
+  - text: "Adelante!"
+  - text: "Dime"
+  - text: "¿Qué pasa?"
+
+  utter_pregunta:
+  - text: "¿En qué te puedo ayudar?"
+
+  utter_mas_ayuda:
+  - text: "¿Puedo hacer algo más por ti?"
+
+  utter_administrador:
+  - text: "En un momento, un administrador tomará el chat. Sentimos las molestias."
+  - text: "Al parecer necsitamos ayuda. En un momento, un administrador tomará el chat. Sentimos las molestias."
+  - text: "En un momento, un administrador tomará el chat."
+  - text: "Para mejorar la comunicación, un administrador tomará el chat. Sentimos las molestias."
+
+  utter_chitchat/contenido:
+  - text: "El contenido de nuestra página está enfocado a usuarios casuales y a empresas con el fin de que adquieran los mejores productos a los mejores precios."
+
+  utter_chitchat/experiencia:
+  - text: "Los usuarios que han adquirido nuestros proyectos han tenido experiencias satisfactorias."
+
+  utter_chitchat/felicitación:
+  - text: "Gracias."
+  - text: "Muchas gracias, nos esforzamos por mejorar cada día."
+  - text: "Gracias! nuestro objetivo es impulsar el desarrollo del campo que beneficie a todos"
+  - text: "Gracias! nuestros resultados son el reflejo del esfuerzo de cada cliente."
+
+  utter_chitchat/interés:
+  - text: "¡Adelante! Disponemos de los mejores productos para usted."
+  - text: "¡Anímese! No quedará decepcionado."
+  - text: "Siempre estamos disponibles para otorgar los mejores productos."
+  - text: "¡¡Esperamos tu compra!!"
+  - text: "¡Piénsalo!"
+
+  utter_saludo:
+  - text: "Hola, ¿Qué tal? ¿En qué te puedo ayudar hoy?"
+  - text: "Hola, Soy el bot de SIAFI, ¿en qué te puedo ayudar?"
+  - text: "¿Qué tal? ¿Cómo puedo ayudarte?"
+  - text: "Hola, soy un chatbot y te puedo ayudar con lo que necesites."
+  - text: "¿Qué tal? ¿En qué te puedo ayudar?"
+  - text: "¡Hola! estoy para servir, dime."
+  - text: "Hola, cuéntame tus dudas"
+
+  utter_chitchat:
+  - text: "Saludos Jeje"
+
+  utter_chitchat/mision:
+  - text: "Nuestra misión es tener los mejores productos al mejor precio para que puedas adquirirlos y seguir fortaleciendo el desarrollo de las tierras mexicanas."
+
+  utter_chitchat/vision:
+  - text: "Nuestra visión es seguir aportando calidad a los productos que obtenemos de nuestra tierra cada día."
+
+  utter_chitchat/objetivo:
+  - text: "Nuestro objetivo es llevar productos de calidad a tu empresa u hogar."
+ 
+  utter_chitchat/ubicacion:
+  - text: "Estamos ubicados en [ciudad]"
+
+  utter_chitchat/gracias:
+  - text: "No hay de qué"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

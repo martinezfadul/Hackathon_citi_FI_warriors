@@ -1,0 +1,30 @@
+<html>
+	<body>
+		<style>
+			.rw-conversation-container .rw-header{background-color: #1EA64B;}
+		</style>
+		<script>!(function () {
+			let e = document.createElement("script"),
+			t = document.head || document.getElementsByTagName("head")[0];
+			(e.src =
+				"https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+			(e.async = !0),
+			(e.onload = () => {
+				window.WebChat.default(
+				{
+					// initPayload: '/greet', // para que el chatbot inicie la conversación
+					customData: { language: "en" },
+					// socketUrl: "https:bf-botfront.development.agents.botfront.cloud",
+					socketUrl: "http://localhost:5005",
+					title: 'Chatbot',
+					subtitle: '¡Di "hola" para empezar!'
+					// add other props here
+				},
+				null
+				);
+			}),
+            t.insertBefore(e, t.firstChild);
+		})();
+		</script>
+	</body>
+</html>

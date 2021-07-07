@@ -1,0 +1,33 @@
+version: "2.0"
+
+rules:
+
+- rule: Saludar cuando aparece el usuario
+  #conversation_start: True
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  wait_for_user_input: False
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: despedir
+  - action: utter_despedir
+
+- rule: Say goodbye anytime the user says gracias
+  steps:
+  - intent: gracias
+  - action: utter_despedir
+
+- rule: Contactar con el administrador cuando haya un problema
+  steps:
+  - intent: administrador
+  - action: utter_administrador
+
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+
+
+

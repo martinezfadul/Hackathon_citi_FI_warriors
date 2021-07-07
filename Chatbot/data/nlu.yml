@@ -1,0 +1,279 @@
+version: "2.0"
+
+nlu:
+- intent: administrador
+  examples: |
+    - Buenas tardes, me pregunto cuál es el link para la entrevista, creo que no lo mandaron y ya es mi turno :c
+    - buenas tardes, disculpe, tengo una duda. Al terminar el forms para el reclutamiento, debo recibir alguna notificación al correo que registré? lo terminé hace unos días pero no me apareció ningún tipo de confirmación de que la encuesta fue contestada con exito por correo, me apareció la página de "finalizado" al final del registro pero nada por correo
+    - Quisiera hablar con un administrador
+    - No entiendí lo que dijiste
+    - ¿Eso qué tiene que ver?
+    - No entiendo
+    - No sé a qué te refieres
+    - ¿Me pueden ayudar?
+    - ¿Puedo hablar con alguien?
+    - Creo que es un error
+    - Eso no tiene sentido
+    - ¿Por qué dices eso?
+    - ¿Cómo?
+    - ¿Qué quisite decir?
+    - Eso no fue lo que pregunté
+    - Esa no era mi duda
+    - ¿Qué?
+    - ?
+    - Tengo un problema
+
+- intent: afirmar
+  examples: |
+    - sí
+    - si
+    - claro
+    - por supuesto
+    - así es
+    - exacto
+    - correcto
+
+- intent: despedir
+  examples: |
+    - buenas noches
+    - chao
+    - nos vemos
+    - adiós
+    - buena noche
+    - bye
+    - hasta luego
+    - tenga un buen día
+    - hasta pronto
+    - ahí nos vemos
+    - adios
+    - entendido, estare al pendiente, gracias
+    - Va, muchas gracias.
+    - gracias :')
+    - Gracias :D
+    - Perfecto, no hay ningún problema, muchas gracias!
+    - Thx
+    - Muchas gracias por su respuesta :D
+    - Excelente! Me prepararé!
+    - Excelente! Muchas gracias!
+    - ay, muchas gracias! perdón por las molestias, es que realmente me interesa participar :3 muchas gracias!
+    - Muchas gracias! Si, ya realice mi registro hace unas pocas horas
+    - Gracias por compartir y sumarse a esta gran iniciativa! Vamos a romperla juntos 🚀🛰️🇲🇽
+    - Estoy al pendiente de las publicaciones, gracias.
+    - Muchísimas gracias. 
+    - Estaré revisando de cerca la posibilidad de formar parte de su equipo.
+    - Saludos y excelente noche.
+    - Fue increíble!!
+    - Muchas gracias por la oportunidad, sigamos juntos!! 💙
+    - Muchas gracias amigos
+    - Les agradezco mucho por la información. Espero pertenecer a su organización el siguiente semestre
+
+- intent: chitchat/gracias
+  examples: |
+    - gracias
+    - vale, gracias
+    - de acuerdo
+    - esta bien
+    - me parece bien
+    - Va, muchas gracias.
+    - gracias :joy:
+    - Gracias :smile:
+    - Muchas gracias por su respuesta :smile:
+    - Excelente! Muchas gracias!
+    - Estoy al pendiente de las publicaciones, gracias.
+    - Muchas gracias por la oportunidad, sigamos juntos!! :blue_heart:
+    - Muchas gracias amigos
+    - Muchísimas gracias. 
+    - ay, muchas gracias! perdón por las molestias, es que realmente me interesa participar :3 muchas gracias!
+    - Perfecto, no hay ningún problema, muchas gracias!
+
+- intent: negar
+  examples: |
+    - no
+    - n
+    - nunca
+    - no lo creo
+    - no me gusta
+    - de ninguna forma
+    - no en realidad
+
+- intent: chitchat/contenido
+  examples: |
+    - me encanta su contenido
+    - como le hacen para generar tanto contenido?
+    - quienes son los encargados de generar contenido?
+    - El contenido lo generan ustedes?
+    - la pagina genera su propio contenido?
+    - creo que su pagina no tiene mucho contenido, será que pueda apoyar en esa área?
+    - adoro las publicaciones de la página, me parecen muy informativas, hay forma en que pueda apoyar?
+    - Tienen un grupo específico para las publicaciones o eso lo hace alguien a parte?
+    - soy diseñadora gráfica en proceso, he visto su contenido y creo que puedo aportar bastante a la página
+    - las personas que se dedican a generar las publicaciones, también administran la página?
+    - crees que haya lugar para que pueda entrar al grupo de las publicaciones?
+    - realmente amo el contenido de la página, hay forma en que pueda contribuir?
+    - el contenido de la pagina me parece bastante interesante
+    - cómo deciden qué publicar en la página?
+    - Las publicaciones las realizan cada día?
+    - estaría padre que hubiera más interacción en la página
+    - me preocupa que he visto menos interacción con la página
+    - creo que han disminuido las publicaciones diarias, sabes a qué se debe?
+    - antes publicaban más cosas
+    
+- intent: duda
+  examples: |
+    - Tengo una pregunta
+    - Tengo una duda
+    - Una pregunta
+    - Una duda
+    - ¿Puedo hacer una pregunta?
+    - ¿Puedo hacer otra pregunta?
+    - Otra cosa
+    - Sólo una pregunta más
+    - Sólo una duda más
+    - Tengo una consulta
+    - Me quedé con una duda
+    - ¿Puedo preguntar algo?
+    - Quería preguntar algo
+    - Sólo por curiosidad
+    - Tengo una consulta
+    - No sé si me puedan responder
+    - Por cierto
+    - Hay algo más
+    - Quisiera saber
+
+- intent: chitchat/experiencia
+  examples: |
+    - Buenas noches. He visto su convocatoria de reclutamiento, ¿Están buscando gente que ya tenga experiencia o conocimiento previo sobre IA o alguno de sus subcampos?  
+    - Cabe señalar que estoy apunto de cursar el 6to semestre de la carrera y en el siguiente semestre tengo contemplado estudiar IA como asignatura.
+    - Ya tengo una especialización en Deep Learning, necesito algo más?
+    - No tengo conocimiento alguno de Inteligencia Artificial, puedo aprender con ustedes?
+    - ¿Ustedes enseñan programación para inteligencia artificial?
+    - ¿Puedo trabajar con ustedes si solo sé lo básico de Inteligenicia Artificial?
+    - ¿Qué lenguaje de programación se necesita para Inteligencia Artificial?
+    - ¿Qué experiencia buscan para el reclutamiento?
+    - No tengo experiencia en Inteligencia Artificial, pero sé programar, puedo ser parte de la sociedad?
+    - Puedo participar en el reclutamiento si sé programación básica?
+    - Me interesa mucho la inteligencia artificial pero no sé programar ¿Ustedes me pueden enseñar?
+    - Quiero participar en el reclutamiento ¿Qué requisitos se necesitan?
+    - Quiero ser parte de la sociedad ¿Debo tener conocimientos previos?
+    - Qué conocimientos debo tener para trabajar con ustedes?
+    - Llevé un semestre de Inteligencia Artificial ¿Es suficiente?
+    - Qué matemáticas necesito para unirme a ustedes?
+    - Voy en primer semestre y apenas voy aprendiendo
+    - No estudio en ingenieria ¿Puedo estar en el reclutamiento?
+    - ¿Puedo ser reclutado si no tengo bases en IA?
+    - Solo sé la teoría en redes neuronales ¿Necesito algo más?
+
+- intent: chitchat/felicitación
+  examples: |
+    - Los quiero felicitar por la divulgación que realizan
+    - Les mando una felicitación por su gran trabajo
+    - Felicidades por su labor social.
+    - Los quería felicitar por sus infografías
+    - Que buena conferencia, felicidades
+    - Me encantó su trabajo, felicidades, sigan así
+    - Felicitaciones por su gran labor
+    - Buen trabajo, felicidades
+    - Me gusta el trabajo en difusión que realizan, felicidades
+    - Felicitaciones, sigan trabajando así.
+    - Me gusta su contenido, felicidades
+    - Muchas gracias, me han hecho enamorarme de la Inteligencia Artificial
+    - Me encanta su contenido
+    - Que buenas infografías
+    - Soy fan de su trabajo
+    - Me encantan sus proyectos 
+    - Creo que tienen una gran organización y mucho por lograr
+    - Realmente me impresiona todo lo que hacen!!
+    - me parecen geniales todos sus proyectos
+    - Me da muchísimo gusto que estén impulsando nuevos proyectos!
+
+
+- intent: chitchat/interés
+  examples: |
+    - Si tengo mucho interés por el campo. He estudiado mucho por mi cuenta
+    - siempre he tenido mucho interés en el area, pero nunca había tenido una oportunidad
+    - sí me llama la atención, pero no se aun
+    - ohh suena interesante
+    - quisiera adquirir un kilo de manzana
+    - me gustaría adquirir café
+    - mmm son productos bastante interesantes
+    - vaya, sí que tienen bastantes cosas interesantes
+    - Todos sus trabajos se ven bastante llamativos
+    - me encanta su contenido, bastante interesante
+    - rayos, es que sí me causa bastante interés, pero no creo estar preparado
+    - tengo un amigo de la FI que podría estar interesado
+    - pues sí, la verdad sí me interesa
+    - mmm sí estaría interesado, pero yo creo que en la siguiente convocatoria
+    - me interesa, pero me preocupan los tiempos
+    - sí, creo que me interesa participar en el área de marketing
+    - Me interesa, pero tengo los fines ocupados
+    - asumakina! bastante interesante
+    - leí la publicación y la verdad me llamó la atención
+
+- intent: chitchat/mision
+  examples: |
+    - ¿cuál es la misión de SIAFI?
+    - Y su misión?
+    - qué hay de su misión?
+    - Cuál consideras que es la misión de SIAFI?
+    - Cuál dirías que es su misión?
+    - Me podrías decir la misión de SIAFI?
+    - y hablando de la misión?
+
+- intent: chitchat/vision
+  examples: |
+    - ¿cuál es la visión de SIAFI?
+    - Y su visión?
+    - qué hay de su visión?
+    - Cuál consideras que es la visión de SIAFI?
+    - Cuál dirías que es su visión?
+    - Me podrías decir la visión de SIAFI?
+    - y hablando de la visión?
+    - cuál es la visión de la sociedad?
+    - qué tiene por visión la sociedad?
+
+- intent: chitchat/objetivo
+  examples: |
+    - ¿cuál es el objetivo de SIAFI?
+    - Y su objetivo?
+    - qué hay de su objetivo?
+    - Cuál consideras que es el objetivo de SIAFI?
+    - Cuál dirías que es su objetivo?
+    - Me podrías decir el objetivo de SIAFI?
+    - y hablando del objetivo?
+    - cuál es el objetivo de la sociedad?
+    - qué tiene por objetivo la sociedad?
+
+- intent: saludo
+  examples: |
+    - Disculpa la molestia
+    - Buen día
+    - Buena tarde
+    - buenas
+    - Buenos días
+    - Buenas tardes
+    - Buenas noches
+    - Que tal
+    - Hola, chicos
+    - buena noche
+    - hey dude!
+    - wenas
+    - ammm hola?
+    - Hola, soy Anita
+    - Disculpa
+    - Hola!
+    - Oye
+    - hola
+    - Qué onda!
+    - Hey!
+    - Me da gusto saludarlos
+
+- intent: chitchat/ubicacion
+  examples: |
+    - ¿Dónde se encuentra SIAFI?
+    - ¿Dónde está ubicada SIAFI?
+    - ¿Cómo puedo llegar a SIAFI?
+    - ¿Dónde los puedo encontrar?
+    - ¿Tienen alguna dirección?
+    - ¿Cómo los ubico?
+    - ¿Están en la Facultad de Ingeniería?
+    - ¿Tienen alguna oficina, cubículo o salón?
